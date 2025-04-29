@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Legends Unmasked</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Legends Unmasked</h1>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="characters.html" class="nav-link">Characters</a>
+      <a href="timeline.html" class="nav-link">Timeline</a>
+      <a href="concept.html" class="nav-link">Concepts</a>
+      <a href="multiverse.html" class="nav-link">Multiverse</a>
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Explore the Marvel Universe</h2>
+      <p>Unveil stories, timelines, and secrets of the multiverse!</p>
+      <img src="https://www.epicstuff.com/cdn/shop/collections/MARVEL_1920x450_b691539a-a0cb-4a43-8d20-ca9d567ab290_1200x1200.jpg?v=1581967770" alt="Marvel Banner">
+    </section>
+
+    <section class="intro">
+      <h3>Discover Marvel's Legacy</h3>
+      <ul>
+        <li>🦸‍♂️ Marvel Characters: Learn about your favorite heroes and villains.</li>
+        <li>⏳ Marvel Timeline: Dive into the key events that shaped the multiverse.</li>
+        <li>🧠 Marvel Concepts: Explore fan theories and fan-created content.</li>
+      </ul>
+    </section>
+
+<!-- Marvel Poll -->
+    <section class="poll">
+      <h3>Marvel Fan Poll</h3>
+      <form>
+        <label for="hero-choice">Who is your favorite Marvel hero?</label>
+        <select id="hero-choice" name="hero">
+          <option value="ironman">Iron Man</option>
+          <option value="capamerica">Captain America</option>
+          <option value="thor">Thor</option>
+          <option value="blackpanther">Black Panther</option>
+          <option value="spiderman">Spider-Man</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Featured Marvel Movies -->
+    <section class="movies">
+      <h3>Featured Marvel Movies</h3>
+      <div class="movie-card">
+        <img src="https://cdn.chili.com/images/public/cms/84/01/2a/5b/84012a5b-4765-44cf-a1ff-43fbd1e984d7.jpg?width=800" alt="Iron Man" />
+        <h4>Iron Man</h4>
+        <p>The film that started it all – Tony Stark's transformation into Iron Man.</p>
+      </div>
+      <div class="movie-card">
+        <img src="https://static.wikia.nocookie.net/avengers-infinity-war-parte-1-y-2/images/1/19/PosterOficcial2.jpg/revision/latest?cb=20190405035826&path-prefix=es" alt="Endgame" />
+        <h4>Avengers: Endgame</h4>
+        <p>The epic conclusion to the Infinity Saga.</p>
+      </div>
+      <div class="movie-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeeGX7RJw8_y1krkdSykx1-BxiPUwgavzuRw&s" alt="Spider-Man: No Way Home" />
+        <h4>Spider-Man: No Way Home</h4>
+        <p>Spider-Man faces multiversal chaos.</p>
+      </div>
+    </section>
+
+    <!-- Marvel Trivia Section -->
+    <section class="trivia">
+      <h3>Marvel Trivia</h3>
+      <p>Did you know? The first Marvel movie ever released was "Iron Man" in 2008.</p>
+      <p>Bonus trivia: Samuel L. Jackson (Nick Fury) appeared in Iron Man's post-credit scene, setting the stage for the Avengers initiative.</p>
+    </section>
+
+<!-- Hero Power Calculator -->
+    <section class="calculator">
+      <h3>Hero Power Calculator</h3>
+      <input type="number" id="power" placeholder="Base Power">
+      <input type="number" id="multiplier" placeholder="Multiplier">
+      <button onclick="calculatePower()">Calculate</button>
+      <p id="result"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Legends Unmasked. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

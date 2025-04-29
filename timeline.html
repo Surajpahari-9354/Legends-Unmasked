@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline | Legends Unmasked</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .timeline {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .event {
+      background: rgba(255,255,255,0.05);
+      border-left: 5px solid #e62429;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+      animation: slideIn 1s ease;
+    }
+    .event:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateX(5px);
+    }
+    .event h3 {
+      color: #e62429;
+      margin-bottom: 10px;
+    }
+    .event p {
+      color: #ccc;
+    }
+    .event img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Legends Unmasked</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="characters.html">Characters</a>
+      <a href="timeline.html" class="active">Timeline</a>
+      <a href="concept.html">Concepts</a>
+      <a href="multiverse.html">Multiverse</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="timeline">
+    <h2 class="section-title">MCU Timeline</h2>
+
+    <section class="event">
+      <h3>1943 - The First Avenger</h3>
+      <p>Steve Rogers becomes Captain America during World War II after being injected with the Super Soldier Serum.</p>
+      <img src="https://wallpapercave.com/wp/wp1880650.jpg" alt="Captain America">
+    </section>
+
+    <section class="event">
+      <h3>1963 - The Birth of S.H.I.E.L.D.</h3>
+      <p>Nick Fury and Peggy Carter help establish the organization that would later monitor superhuman activity globally.</p>
+      <img src="https://wallpapercave.com/wp/wp3856990.jpg" alt="SHIELD">
+    </section>
+
+    <section class="event">
+      <h3>1980 - Ego Plants the Seed</h3>
+      <p>Ego, the living planet and father of Peter Quill, travels across galaxies planting seeds to expand himself.</p>
+      <img src="https://wallpapercave.com/wp/wp14008420.jpg" alt="Ego the Living Planet">
+    </section>
+
+    <section class="event">
+      <h3>1995 - Captain Marvel's Arrival</h3>
+      <p>Carol Danvers gains incredible cosmic powers and helps defend Earth from an alien invasion.</p>
+      <img src="https://wallpapercave.com/wp/wp4331452.jpg" alt="Captain Marvel">
+    </section>
+
+    <section class="event">
+      <h3>2008 - The Rise of Iron Man</h3>
+      <p>Tony Stark builds the Iron Man suit and declares himself a superhero, beginning the MCU.</p>
+      <img src="https://wallpapercave.com/wp/wp5533310.jpg" alt="Iron Man">
+    </section>
+
+    <section class="event">
+      <h3>2012 - The Battle of New York</h3>
+      <p>The Avengers assemble for the first time to stop Loki and the Chitauri army from invading Earth.</p>
+      <img src="https://wallpapercave.com/wp/wp3059883.jpg" alt="Battle of New York">
+    </section>
+
+    <section class="event">
+      <h3>2014 - Guardians of the Galaxy</h3>
+      <p>Star-Lord forms a ragtag team of misfits to stop Ronan the Accuser from using an Infinity Stone.</p>
+      <img src="https://wallpapercave.com/wp/wp8671720.jpg" alt="Guardians of the Galaxy">
+    </section>
+
+    <section class="event">
+      <h3>2016 - Civil War</h3>
+      <p>The Avengers split into factions after the Sokovia Accords divide their opinions on government control.</p>
+      <img src="https://wallpapercave.com/wp/wp3069104.jpg" alt="Civil War">
+    </section>
+
+    <section class="event">
+      <h3>2018 - Infinity War</h3>
+      <p>Thanos collects all six Infinity Stones and snaps away half the universe’s population.</p>
+      <img src="https://wallpapercave.com/uwp/uwp3844645.jpeg" alt="Infinity War">
+    </section>
+
+    <section class="event">
+      <h3>2023 - Endgame & Time Heist</h3>
+      <p>The Avengers travel back in time to retrieve the Infinity Stones and reverse Thanos’s snap.</p>
+      <img src="https://wallpapercave.com/wp/wp14763970.jpg" alt="Endgame">
+    </section>
+
+    <section class="event">
+      <h3>2024 - Multiverse Cracks</h3>
+      <p>Events in Loki, Spider-Man: No Way Home, and Doctor Strange in the Multiverse of Madness lead to the fracturing of the multiverse.</p>
+      <img src="https://i.insider.com/623a1cbd4627420018f7ce87?width=800&format=jpeg&auto=webp" alt="Multiverse Chaos">
+    </section>
+
+    <section class="event">
+      <h3>2025 - Kang the Conqueror Emerges</h3>
+      <p>After the multiversal war, Kang appears as the new cosmic threat, teased across several realities.</p>
+      <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/09/kang-the-conqueror-s-variants-in-the-mcu-multiverse-saga.jpg" alt="Kang the Conqueror">
+    </section>
+
+    <section class="event">
+      <h3>2025 - Moon Knight's Awakening</h3>
+      <p>Marc Spector, chosen by the Egyptian god Khonshu, battles inner demons and enemies of the night.</p>
+      <img src="https://nerdreactor.com/wp-content/uploads/2024/04/moon-knight.jpg" alt="Moon Knight">
+    </section>
+
+    <section class="event">
+      <h3>2026 - Secret Wars on the Horizon</h3>
+      <p>The multiverse spirals into chaos, leading to an ultimate battle among realities — Secret Wars is foretold.</p>
+      <img src="https://agentsoffandom.com/wp-content/uploads/2022/06/secret-jpg.webp" alt="Secret Wars">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Legends Unmasked | All rights reserved</p>
+  </footer>
+</body>
+</html>
