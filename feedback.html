@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback | Legends Unmasked</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .feedback-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+      animation: fadeInUp 1s ease;
+    }
+    .feedback-container h2 {
+      text-align: center;
+      color: #e62429;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      background: #e62429;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    input[type="submit"]:hover {
+      background: #a31b20;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Legends Unmasked</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="characters.html">Characters</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="concept.html">Concepts</a>
+      <a href="multiverse.html">Multiverse</a>
+      <a href="about.html">About</a>
+      <a href="feedback.html" class="active">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="feedback-container">
+      <h2>We'd Love Your Feedback!</h2>
+      <form action="https://formspree.io/f/xoqgqgyn" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="6" placeholder="Your Feedback" required></textarea>
+        <input type="submit" value="Send Feedback" />
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Legends Unmasked | All rights reserved</p>
+  </footer>
+</body>
+</html>
