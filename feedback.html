@@ -3,79 +3,204 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Feedback | Legends Unmasked</title>
+  <title>Feedback - Legends Unmasked</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .feedback-container {
-      max-width: 800px;
-      margin: 50px auto;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
-      animation: fadeInUp 1s ease;
-    }
-    .feedback-container h2 {
-      text-align: center;
-      color: #e62429;
-      margin-bottom: 20px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    input, textarea {
-      padding: 10px;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-    }
-    input[type="submit"] {
-      background: #e62429;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    input[type="submit"]:hover {
-      background: #a31b20;
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      color: #fff;
+      animation: fadeInPage 1s ease-in-out;
     }
 
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(50px); }
+    @keyframes fadeInPage {
+      from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-bottom: 2px solid #fff;
+    }
+
+    header h1 {
+      margin: 10px 0;
+      font-size: 2.8em;
+      color: #FFCC00;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    nav {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #FFCC00;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.75);
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      animation: slideUp 1.5s ease;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      margin-top: 20px;
+      color: #FFCC00;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: none;
+      border-radius: 10px;
+      background-color: #333;
+      color: white;
+      font-size: 1em;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      box-shadow: 0 0 10px #FFCC00;
+      background-color: #444;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: #FFCC00;
+      border: none;
+      border-radius: 10px;
+      color: #000;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #fff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-top: 2px solid #fff;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Legends Unmasked</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="characters.html">Characters</a>
-      <a href="timeline.html">Timeline</a>
-      <a href="concept.html">Concepts</a>
-      <a href="multiverse.html">Multiverse</a>
-      <a href="about.html">About</a>
-      <a href="feedback.html" class="active">Feedback</a>
-    </nav>
-  </header>
 
-  <main>
-    <div class="feedback-container">
-      <h2>We'd Love Your Feedback!</h2>
-      <form action="https://formspree.io/f/mjkwgwwk" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="6" placeholder="Your Feedback" required></textarea>
-        <input type="submit" value="Send Feedback" />
-      </form>
-    </div>
-  </main>
+<header>
+  <h1>We Value Your Feedback!</h1>
+</header>
 
-  <footer>
-    <p>&copy; 2025 Legends Unmasked | All rights reserved</p>
-  </footer>
+<!-- Navigation Links -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="characters.html">Characters</a>
+  <a href="timeline.html">Timeline</a>
+  <a href="concepts.html">Concepts</a>
+  <a href="multiverse.html">Multiverse</a>
+  <a href="feedback.html">Feedback</a>
+</nav>
+
+<div class="container">
+  <form action="submit-feedback.php" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="experience">How was your experience with Legends Unmasked?</label>
+    <select id="experience" name="experience" required>
+      <option value="">Select</option>
+      <option value="excellent">Excellent</option>
+      <option value="good">Good</option>
+      <option value="average">Average</option>
+      <option value="poor">Poor</option>
+    </select>
+
+    <label for="favorite">Who is your favorite Marvel character?</label>
+    <input type="text" id="favorite" name="favorite" />
+
+    <label for="feature">What feature did you enjoy the most?</label>
+    <input type="text" id="feature" name="feature" />
+
+    <label for="improvements">What can we improve?</label>
+    <textarea id="improvements" name="improvements" rows="4"></textarea>
+
+    <label for="rating">Rate us (1 to 5 stars)</label>
+    <select id="rating" name="rating">
+      <option value="5">5 - Outstanding</option>
+      <option value="4">4 - Great</option>
+      <option value="3">3 - Average</option>
+      <option value="2">2 - Poor</option>
+      <option value="1">1 - Terrible</option>
+    </select>
+
+    <label for="suggestions">Any suggestions for new content or features?</label>
+    <textarea id="suggestions" name="suggestions" rows="3"></textarea>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+</div>
+
+<footer>
+  <p>&copy; 2025 Legends Unmasked. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
